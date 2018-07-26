@@ -1,0 +1,228 @@
+@import "vars.sass"
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	::after
+		content: " "
+		display: block
+		width: 100%
+		height: 0
+		clear: both
+	
+h1, p 
+	// margin: 0
+	// line-height: 1
+	// float_left: left
+	font-family: 'Arial', sans-serif
+    font-weight: normal
+    font-size: 10px
+
+strong
+	display: inline-block
+
+body
+	background-color: #f9f4f4
+	width: 100%
+	height: 100%
+
+.wrapper
+	// max-width: 1200px
+	//background-color: brown
+	width: 1200px
+	height: 100%
+	margin: 20px
+	//display: inline-block
+	grid-gap: 10px
+	display: flex
+	flex-wrap: wrap
+	display: inner-block
+	margin: 0 auto
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+	grid-auto-rows: minmax(150px, auto)
+	.header
+		//background-color: blue
+		display: block
+		width: 100%
+		.title_wrap
+			//background-color: yellow
+			height: 50px
+			width: 100%
+			border-bottom: 1px solid darkgrey
+			display: inline-block
+			.left_elem
+				// background-color: red
+				width: 35%
+				display: inline-block
+				height: 100%
+			.right_elem
+				float: right	
+				display: inline-block
+				// background-color: pink
+				width: 3%
+				height: 100%
+				position: relative
+				.phone
+					height: 20px
+					width: 280px
+					// background-color: yellow
+					position: absolute
+					top: 0
+					right: 0
+					bottom: 0
+					margin: auto
+					display: inline-block
+					color: #64ac44
+			.title
+				margin-top: 5px
+				margin-left: 10px
+			.phone
+				//background-color: yellow
+		.info_title
+			//background-color: lightblue
+			font-size: 19px
+			letter-spacing: 0.2px
+			text-align: justify
+			line-height: 22px
+			margin-top: 20px
+			margin-bottom: 40px
+			border-bottom: 1px solid darkgrey
+			display: inline-block
+
+			.price_wrapper
+				margin-top: 25px
+				margin-bottom: 25px
+				width: 100%
+				height: 50px
+				.item
+					//background-color: lime
+					width: 25%
+					height: 50px
+					float: left
+					//border: 1px solid white
+					display: inline-block
+					text-align: center
+					.left_item
+						//background-color: orange
+						width: 70%
+						height: 50px
+						line-height: 50px
+						float: left	
+
+						p
+							text-transform: uppercase
+							display: inline-block
+							margin-left: 10px
+					.bold_pass
+						margin-left: 30px
+						line-height: 50px
+						text-align: left
+
+					.right_item
+						float: left	
+						height: 50px
+						line-height: 50px
+						width: 30%
+						text-align: left
+						sup
+							display: inline-block
+							height: 100%
+							float: left
+							text-transform: uppercase
+							font-size: 18px
+						.dollar
+							display: inline-block
+							font-size: 32px
+							margin-left: 1px
+
+
+	.panel_wrapper
+		width: 100%
+		//background-color: red
+		.panel_wrap
+			width: 33.33%
+			height: 300px
+			float: left
+			display: inline-block
+			//background-color: black
+			.panel
+				//background-color: brown
+				//color: #000000
+				margin-left: 10px
+				//margin-bottom: 65px
+				//border-radius: 5px
+				//float: left
+				//padding-bottom: 1px
+				.panel_title
+					//background-color: lime
+					.icon
+						margin-left: 17px
+						margin-right: 10px
+						width: 29px
+						height: 29px
+						//background-color: blue
+						display: inline-block
+						float: left
+						background-image: url(../img/passport_icons.png)
+						background-repeat: no-repeat
+					#icon2
+						background-position: -28px 0px	
+					#icon3	
+						background-position: -57px 0px	
+					#icon4
+						background-position: -145px 0px	
+					#icon5	
+						background-position: -173px 0px
+					#icon6	
+						background-position: -115px 0px
+					#icon7	
+						background-position: -115px 0px
+					.pass_link
+						display: inline-block
+						font-size: 30px
+						font-weight: bold
+						text-decoration: none
+						color: #000
+						margin-top: 20px
+						display: block
+						// text-align: center
+						margin-bottom: 10px
+					
+
+				.wrap_text
+					//background-color: grey
+					//height: 150px
+					p
+						margin-left: 20px
+						margin-right: 20px
+						//font-size: 18px
+				.wrap_text_short
+					height: 65px
+				.link_btn
+					text-decoration: none
+					.btn_submit
+						display: inline-block
+						margin: 15px 
+						width: 280px
+						background-color: #64ac44
+						color: #fff
+						font-size: 19px
+						border-radius: 5px
+						height: 35px
+						border: none
+						text-decoration: none
+						cursor: pointer
+						font-weight: bold
+						&:hover
+							background-color: #3b8822
+	     		
+.push_button:active 
+	// -webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset;
+	top: 5px
+
+.hidden
+	display: none
+
+
+

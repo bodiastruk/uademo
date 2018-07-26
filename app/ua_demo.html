@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<style></style>
+
+<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+
+	<script>loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/uademo.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	
+	<noscript>	
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+
+</head>
+<body>
+<div id="dummy"></div>
+
+<section id="uademo">
+	<nav class="menu">
+		<div class="logo_wrap">
+			<div class="logo">
+				<img src="img/footer_logo_us.png" alt="">
+				<span class="inc">UA demo In.c</span>
+			</div>	
+		</div>
+		<div class="reg_nav">
+			<div class="reg_wrap">
+				<a class="login link" href="javascript:"><span class="active">login</span></a><span class="login">or</span><a class="login link" href="javascript:"><span class="active">registration</span></a>
+			</div>	
+		</div>
+	</nav>
+	<div class="content">
+		<div class="under_menu_bg"></div>
+		<div class="main_container">
+			<div class="container_title">
+				<p class="p_text">Need to apply for travel documents or research entry requirements? Select a service and then enter your information below.</p>
+			</div>
+			<div class="container_data">
+				<div class="select_wrap">
+					<div class="item_sel">
+						<select id="ciz">
+							<option>Citizenship </option>
+							<option >Ukraine</option>
+							<option>United Arab Emirates</option>
+							<option>United States of America</option>
+							<option>Uruguay</option>
+							<option>Uzbekistan</option>
+							<option>I don't know</option>
+				        </select>
+				        <img class="verify error" src="img/error.png" alt="">
+				        <img class="verify success" src="img/success.png" alt="">
+					</div>
+					<div class="item_sel">
+						<select id="live">
+				             <option>Where do you live</option>
+				             <option>Ukraine</option>
+				             <option>United Arab Emirates</option>
+				             <option>United States of America</option>
+				             <option>Uruguay</option>
+				             <option>Uzbekistan</option>
+				             <option>USSR</option>
+				        </select>
+				        <img class="verify error" src="img/error.png" alt="">
+			        	<img class="verify success" src="img/success.png" alt="">
+					</div>
+					<div class="item_sel">
+						 <select id="disc">
+				             <option>Travel destination</option>
+				             <option>Ukraine</option>
+				             <option>United Arab Emirates</option>
+				             <option>United States of America</option>
+				             <option>Uruguay</option>
+				             <option>Uzbekistan</option>
+				             <option>Mars & Moon</option>
+				        </select>
+				        <img class="verify error" src="img/error.png" alt="">
+				        <img class="verify success" src="img/success.png" alt="">
+					</div>
+				</div>
+				<div class="submit_btn">
+					<input type="button" id="submit" class="input_submit" value="Apply for the visa">
+				</div>
+			</div>
+
+			<div class="container_footer">
+				<img src="img/comodo_secure.png" class="comodo_secure" alt="">
+			</div>
+		</div>
+	<div>	
+
+
+
+</section>
+
+
+ <!--    <div class="main_wrap">
+    	<header class="header">
+    		<p>Need to apply for travel documents or research entry requirements? Select a service and then enter your information below.</p>
+    	</header>
+		
+		<div class="select_wrapper">
+			<div class="item_wrap">
+		  		<select id="ciz">
+					<option>Citizenship </option>
+					<option >Ukraine</option>
+					<option>United Arab Emirates</option>
+					<option>United States of America</option>
+					<option>Uruguay</option>
+					<option>Uzbekistan</option>
+		        </select>
+	        	<img class="verify success" src="img/success.png" alt="">
+	        	<img class="verify error" src="img/error.png" alt="">
+			</div>
+			<div class="item_wrap ">
+				<select>
+		             <option>Where do you live</option>
+		             <option>Ukraine</option>
+		             <option>United Arab Emirates</option>
+		             <option>United States of America</option>
+		             <option>Uruguay</option>
+		             <option>Uzbekistan</option>
+		        </select>
+	        	<img class="verify" src="img/success.png" alt="">
+			</div>
+			<div class="item_wrap ">
+				 <select>
+		             <option>Travel destination</option>
+		             <option>Ukraine</option>
+		             <option>United Arab Emirates</option>
+		             <option>United States of America</option>
+		             <option>Uruguay</option>
+		             <option>Uzbekistan</option>
+		        </select>
+	        	<img class="verify" src="img/success.png" alt="">
+			</div> -->
+			<!-- <div class="panel"></div> -->
+
+	       
+		<!-- 	<div class="bottom">
+				<a href="!!!" class="link_btn">
+	       	 		<input class="btn_submit" type="button"  value="Apply for the visa" >
+	           	</a>
+			</div>
+				<div class="panel_title">
+					<div id="icon1" class="icon">
+					</div>
+				</div>
+				<div class="video">
+					<a href="https://www.youtube.com/watch?v=9ucSaA84SE0" target="_blank" rel="nofollow">
+						<i class="portal-bg">
+						</i>
+						<div class="video_name">See, how it works
+						</div>
+					</a>
+				</div>
+		</div>
+	</div>
+    
+	<footer class="footer"> footer
+		<div class="">
+			
+		</div>
+	</footer> -->
+
+	<script>var scr = {"scripts":[
+	{"src" : "js/libs.js", "async" : false},
+	{"src" : "js/main.js", "async" : false}
+	]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+
+</body>
+</html>
+
+
+
